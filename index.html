@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <p id="miParrafo">Hello world! This is HTML5 Boilerplate.</p>
+  <main>
+
+    <ul id="miLista"></ul>
+      <div id="miDiv" style="width: 100px; height: 100px; background-color: yellowgreen;">hola soy div</div>
+    <button id="apagarDiv">apagar Div</button>
+
+
+    <form id="miFormulario">
+      <label for="campoTexto">Ingresa algo:</label>
+      <input type="text" id="campoTexto">
+      <button id="botonFormulario">Mostrar</button>
+    </form>
+    <p id="resultado"></p>
+    <p id="resultado2">Presiona una tecla</p>
+    <ul id="miLista2">
+      <li>elemento1</li>
+      <li>elemento2</li>
+      <li>elemento3</li>
+    </ul>
+
+    <button id="miBoton">hola clikeame</button>
+
+    <p id="parrafoContadorId">Hola te cuento los clicks</p>
+    <button id="miBoton2">contador de clicks</button>
+    <button id="miBoton3">reset</button>
+
+    <div id="Div2" style="align-content: center">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Lightning_McQueen.png" alt="Descripción de la imagen">
+    </div>
+    <p id="parrafoDescriptivo"></p>
+
+
+    <label for="menuDesplegable" id="txtMDId">Selecciona una opcion</label>
+    <select id="menuDesplegable">
+      <option value="0">--seleciona una opcion--</option>
+      <option value="gato">gato</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <div id="reloj"></div>
+
+    <table id="tabla" border="1">
+      <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        <td>Celda 3</td>
+      </tr>
+      <tr>
+        <td>Celda 4</td>
+        <td>Celda 5</td>
+        <td>Celda 6</td>
+      </tr>
+      <tr>
+        <td>Celda 7</td>
+        <td>Celda 8</td>
+        <td>Celda 9</td>
+      </tr>
+    </table>
+
+    <form id="form1">
+      <ul>
+        <li>
+          <label id="nombreForm">Nombre:</label>
+          <input type="text" id="nombreInput" placeholder="Mati">
+        </li>
+        <li>
+          <label>Correo electronico:</label>
+          <input type="email" id="emailInput" placeholder="mati@ejemplo.com">
+        </li>
+        <span id="emailError" style="color:red; display:none;">Correo electrónico inválido</span>
+        <li>
+          <button id="enviarForm" type="submit">enviar Datos</button>
+        </li>
+      </ul>
+    </form>
+
+    <div class="calculadora">
+      <input type="text" id="resultadoCalcu" disabled>
+      <br>
+      <button onclick="agregarNumero('1')">1</button>
+      <button onclick="agregarNumero('2')">2</button>
+      <button onclick="agregarNumero('3')">3</button>
+      <button onclick="operacion('/')">/</button>
+      <br>
+      <button onclick="agregarNumero('4')">4</button>
+      <button onclick="agregarNumero('5')">5</button>
+      <button onclick="agregarNumero('6')">6</button>
+      <button onclick="operacion('*')">*</button>
+      <br>
+      <button onclick="agregarNumero('7')">7</button>
+      <button onclick="agregarNumero('8')">8</button>
+      <button onclick="agregarNumero('9')">9</button>
+      <button onclick="operacion('-')">-</button>
+      <br>
+      <button onclick="agregarNumero('0')">0</button>
+      <button onclick="limpiar()">C</button>
+      <button onclick="calcular()">=</button>
+      <button onclick="operacion('+')">+</button>
+    </div>
+
+    <div id="adivinaNumero">
+      <p>Adivna el numero entre el 1 y 5</p>
+      <input type="number" id="numero">
+      <button onclick="RevelarResultado()">a ver grone si sabes</button>
+    </div>
+    <div id="noAdivino" style="display: none">
+      <p style="color: red">Mal</p>
+    </div>
+    <div id="adivinoNumero" style="display: none">
+      <p class="rainbow-text">Felicidades adivinaste!!</p>
+    </div>
+
+  </main>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
